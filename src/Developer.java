@@ -34,5 +34,4 @@ public class Developer extends Employee{
     public void printTechnologies(){
     }
   //  optionally a more detailed toString().
-
 }
