@@ -1,19 +1,45 @@
+import java.util.Objects;
+
 public class Employee {
 
-   // Example fields:
 
-    private String employeeId
-    private String firstName
-    private String lastName
+    private String employeeId;
+    private String firstName;
+    private String lastName;
+    private double baseSalary;
 
-    private double baseSalary
+
     //This class may contain:
-
     //a constructor that initializes the shared fields,
+
+    public Employee(String employeeId, String firstName, String lastName, double baseSalary) {
+        this.employeeId = employeeId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.baseSalary = baseSalary;
+    }
+
+
     //getters for shared data,
-    a method public final String getEmployeeId(),
-    a method public double calculateMonthlyCost(),
-    a method public String introduceYourself(),
-    an overridden toString(),
-    an overridden equals() comparing objects by employeeId.
+    public final String getEmployeeId(){
+        return employeeId;
+    }
+
+    public double getBaseSalary() {
+        return baseSalary;
+    }
+
+    public double calculateMonthlyCost(){
+        return baseSalary;
+    }
+
+    public String introduceYourself(){
+        return "I am an employee: " + firstName + " " + lastName;
+    }
+
+    @Override
+    toString()
+
+    @Override
+    equals() //comparing objects by employeeId.
 }
